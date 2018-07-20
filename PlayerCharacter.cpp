@@ -41,18 +41,18 @@ PlayerCharacter::PlayerCharacter(int character) {
 		// Each character is held as a unique integer.
 		// The order is based on birthdays (each character has a different birthday month).
 		// The order is as follows:
-		//	 0: Vivian Lopez			(January 11)
-		//	 1: Missy Dubourde 			(February 14)
-		//	 2: Jenny LeClerc			(March 4)
+		//	 0: Vivian Lopez		(January 11)
+		//	 1: Missy Dubourde 		(February 14)
+		//	 2: Jenny LeClerc		(March 4)
 		//	 3: Father Rhinehardt		(April 29)
-		//	 4: Brandon Jaspers			(May 21)
+		//	 4: Brandon Jaspers		(May 21)
 		//	 5: Darrin "Flash" Williams	(June 6)
 		//	 6: Professor Longfellow	(July 27)
 		//	 7: Heather Granville		(August 2)
-		//	 8: Peter Akimoto			(September 3)
-		//	 9: Ox Bellows				(October 18)
-		//	10: Zoe Ingstrom			(November 5)
-		//	11: Madame Zostra			(December 10)
+		//	 8: Peter Akimoto		(September 3)
+		//	 9: Ox Bellows			(October 18)
+		//	10: Zoe Ingstrom		(November 5)
+		//	11: Madame Zostra		(December 10)
 		
 		case  0 : 	
 			firstName = "Vivian";
