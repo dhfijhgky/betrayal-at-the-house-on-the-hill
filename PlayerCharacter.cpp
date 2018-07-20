@@ -2,6 +2,8 @@
 #include <string>
 #include <iostream>
 
+// Setters and getters
+// Straight forward if you understand what the variables are for (see header file)
 int PlayerCharacter::getPip(int i) {
 	return pip[i];
 }
@@ -36,6 +38,22 @@ std::string PlayerCharacter::getFirstName() {
 
 PlayerCharacter::PlayerCharacter(int character) {
 	switch(character) {
+		// Each character is held as a unique integer.
+		// The order is based on birthdays (each character has a different birthday month).
+		// The order is as follows:
+		//	 0: Vivian Lopez			(January 11)
+		//	 1: Missy Dubourde 			(February 14)
+		//	 2: Jenny LeClerc			(March 4)
+		//	 3: Father Rhinehardt		(April 29)
+		//	 4: Brandon Jaspers			(May 21)
+		//	 5: Darrin "Flash" Williams	(June 6)
+		//	 6: Professor Longfellow	(July 27)
+		//	 7: Heather Granville		(August 2)
+		//	 8: Peter Akimoto			(September 3)
+		//	 9: Ox Bellows				(October 18)
+		//	10: Zoe Ingstrom			(November 5)
+		//	11: Madame Zostra			(December 10)
+		
 		case  0 : 	
 			firstName = "Vivian";
 			 lastName = "Lopez";
@@ -295,6 +313,7 @@ PlayerCharacter::PlayerCharacter(int character) {
 				  break;
 	}
 	
+	// fullName is then built here so we don't have to reassemble it over and over later.
 	if (title != "") fullName += (title + " ");
 	if (firstName != "") fullName += firstName;
 	if (nickName != "" || lastName != "") fullName += " ";
