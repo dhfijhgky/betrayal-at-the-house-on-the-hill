@@ -10,6 +10,10 @@ void PlayerCharacter::setPip(int i, int val) {
 	pip[i] = val;
 }
 
+int PlayerCharacter::getStartingPip(int i) {
+	return startingPip[i];
+}
+
 int PlayerCharacter::getValue(int i) {
 	return value[i][pip[i]];
 }

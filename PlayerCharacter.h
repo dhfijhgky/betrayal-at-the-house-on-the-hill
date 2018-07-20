@@ -12,6 +12,7 @@ class PlayerCharacter {
 		
 		int getPip(int);
 		void setPip(int, int);
+		int getStartingPip(int);
 		int getValue(int);
 		int getValue(int, int);
 		int getBirthday();
