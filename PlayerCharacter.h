@@ -1,4 +1,5 @@
 #ifndef PLAYERCHARACTER_H
+#define PLAYERCHARACTER_H
 
 #include <string>
 
