@@ -1,5 +1,4 @@
-#ifndef PC_H
-#define PC_H
+#ifndef PLAYERCHARACTER_H
 
 #include <string>
 
