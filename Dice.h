@@ -6,6 +6,7 @@ class Die {
 		Die();
 		//~Die();
 	
+		// setRandomValue() sets currentValue to a randomly selected element in value[].
 		void setRandomValue();
 		int getValue();
 		
@@ -35,8 +36,13 @@ class Dice {
 		// reroll(n) rolls only the Die at index n.
 		void reroll(int);
 		
+		// getValue(n) runs Die::getValue() at data[n].
 		int getValue(int);
+		
+		// getSum() returns the sum of all values held in data[]
 		int getSum();
+		
+		// getSum(n) returns the sum of all values held in data[] up to data[n].
 		int getSum(int);
 		
 	private:

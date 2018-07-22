@@ -2,8 +2,6 @@
 #include <string>
 #include <iostream>
 
-// Setters and getters
-// Straight forward if you understand what the variables are for (see header file)
 int PlayerCharacter::getPip(int i) {
 	return this->pip[i];
 }
@@ -17,7 +15,7 @@ int PlayerCharacter::getStartingPip(int i) {
 }
 
 int PlayerCharacter::getValue(int i) {
-	return this->value[i][this->pip[i]];
+	return this->getValue(i, this->pip[i]);
 }
 
 int PlayerCharacter::getValue(int i, int j) {
@@ -39,7 +37,7 @@ std::string PlayerCharacter::getFirstName() {
 PlayerCharacter::PlayerCharacter(int character) {
 	switch(character) {
 		// Each character is held as a unique integer.
-		// The order is based on this->birthdays (each character has a different this->birthday month).
+		// The order is based on birthdays (each character has a different birthday month).
 		// The order is as follows:
 		//	 0: Vivian Lopez		(January 11)
 		//	 1: Missy Dubourde 		(February 14)

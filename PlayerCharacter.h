@@ -11,13 +11,25 @@ class PlayerCharacter {
 		PlayerCharacter(int character);
 		//~PlayerCharacter();
 		
+		// getPip(n) returns pip[n] (current pip level in n trait).
 		int getPip(int);
+		
+		// setPip(m, n) sets pip[m] to n (changes current pip level to something else).
 		void setPip(int, int);
+		
+		// getStartingPip(n) returns startingPip[n].
 		int getStartingPip(int);
+		
+		// getValue(n) returns value[n][pip[n]] (current pip value in n trait).
 		int getValue(int);
+		
+		// getValue(m, b) returns value[m][n] (pip value in m trait at n pip level).
 		int getValue(int, int);
+		
+		// getBirthday returns birthday.
 		int getBirthday();
 		
+		// Returns fullName and firstName, respectively.
 		std::string getFullName();
 		std::string getFirstName();
 		
