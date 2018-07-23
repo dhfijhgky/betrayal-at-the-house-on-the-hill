@@ -3,9 +3,6 @@
 
 #include <string>
 
-// might = 0, speed = 1, knowledge = 2, sanity = 3
-enum Trait {might, speed, knowledge, sanity};
-
 class PlayerCharacter {
 	public:
 		PlayerCharacter(int character);
@@ -34,6 +31,9 @@ class PlayerCharacter {
 		std::string getFirstName();
 		
 	private:
+		enum Trait {might, speed, knowledge, sanity};
+		enum Position = {column, row, floor};
+		
 		// NUM_OF_PIPS is the amount of possible values for each trait (excluding death).
 		static const int NUM_OF_PIPS = 8;
 		
@@ -58,6 +58,9 @@ class PlayerCharacter {
 		std::string firstName;
 		std::string nickName;
 		std::string lastName;
+		
+		// position[] holds the position of the character in <column,row,floor> format.
+		int position[3];
 };
 
 #endif // PC_H

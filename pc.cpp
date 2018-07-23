@@ -4,6 +4,7 @@
 #include <cstdlib>
 
 int main() {
+	enum Trait {might, speed, knowledge, sanity};
 	srand(time(NULL));
 	int temp = rand() % 12;
 	

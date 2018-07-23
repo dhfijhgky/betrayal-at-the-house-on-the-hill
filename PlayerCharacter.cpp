@@ -317,4 +317,8 @@ PlayerCharacter::PlayerCharacter(int character) {
 	if (this->nickName != "" || this->lastName != "") this->fullName += " ";
 	if (this->nickName != "") this->fullName += ("\"" + this->nickName + "\" ");
 	if (this->lastName != "") this->fullName += this->lastName;
+	
+	this->position[row] = 0;
+	this->position[column] = 0;
+	this->position[floor] = 0;
 }
