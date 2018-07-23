@@ -40,16 +40,16 @@ class PlayerCharacter {
 		// NUM_OF_TRAITS is the amount of traits each character has (might, speed, knowledge, sanity).
 		static const int NUM_OF_TRAITS = 4;
 	
-		// pip[] holds the current level each trait is at for a given PlayerCharacter.
+		// pip[n] holds the current pip level at trait n.
 		int pip[NUM_OF_TRAITS];
 		
-		// startingPip[] holds the initial level each trait started at (some game mechanics need this information).
+		// startingPip[n] holds the initial pip level at trait n (some mechanics need this information).
 		int startingPip[NUM_OF_TRAITS];
 		
-		// value[][] actually tells us what our trait value is at a given position, not just what position we are at.
+		// value[m][n] holds the trait value in trait m at pip level n.
 		int value[NUM_OF_TRAITS][NUM_OF_PIPS];
 		
-		// Stored as an integer; interpreted as # of days since Dec 31.
+		// birthday is interpreted as # of days since Dec 31.
 		int birthday;
 		
 		// Names, glorious names.
